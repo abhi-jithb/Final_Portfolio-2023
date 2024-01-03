@@ -28,12 +28,21 @@ header {
 }
 
 .logo a {
-    font-size: 1.3rem;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 800;
     color: var(--primary-color);
     text-decoration: none;
+    /* background:#0d18e4; */
+    background-color: rgb(241, 235, 235);
 }
 
+.logo a:hover{
+    color: #26699b;
+    transition: all 0.3s ease-in;
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95)250ms 500ms;
+    text-shadow: #01aced;
+}
 nav {
     z-index: 1;
 }
@@ -103,13 +112,14 @@ section {
 
 .social a {
     color: var(--secondary-color);
+    background: #5a5b88;
     font-size: 1rem;
     border: 1px solid #fff;
     border-radius: 50%;
     padding: 0.3rem;
     text-align: center;
-    width: 27px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     display: grid;
     place-items: center;
 
@@ -165,12 +175,15 @@ section {
 
 .blue-bg img {
     position: relative;
-    bottom: 30px;
-    right: 20px;
-    width: 100%;
+    bottom: 15px;
+    right: 23px;
+    width: 115%;
+    height: 110%;
     border-radius: 50%;
 }
-
+.blue-bg.img:hover{
+     transition: all .3s ease-in-out;
+}
 
 /*BUTTON*/
 .cv-btn {
@@ -297,6 +310,7 @@ section {
         height: 12.75em;
     }
 
+
 }
 
 @media only screen and (max-width: 320px) {
@@ -325,4 +339,5 @@ section {
         right: 10px;
         width: 100%;
     }
+
 }
